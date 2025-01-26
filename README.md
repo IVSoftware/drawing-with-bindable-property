@@ -77,7 +77,7 @@ class MyGraphicsView : GraphicsView, IDrawable
             }
         }
     }
-
+    // <PackageReference Include="IVSoftware.Portable.WatchdogTimer" Version="1.2.1" />
     public WatchdogTimer Refresh
     {
         get
