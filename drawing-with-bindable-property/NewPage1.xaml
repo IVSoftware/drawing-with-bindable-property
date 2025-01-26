@@ -3,39 +3,27 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SleepDiary.NewPage1"             
              xmlns:drawable="clr-namespace:SleepDiary"
-             xmlns:converters="clr-namespace:SleepDiary.Converters"
              xmlns:controls="clr-namespace:SleepDiary.Controls">
 
     <ContentPage.BindingContext>
-        <drawable:NewPage1ViewModel x:Name="VM"/>
+        <drawable:NewPage1ViewModel />
     </ContentPage.BindingContext>
-    <ContentPage.Resources>
-        <ResourceDictionary>
-            <converters:IntParser x:Key="IntParser"/>
-        </ResourceDictionary>
-    </ContentPage.Resources>
 
     <ScrollView>
         <VerticalStackLayout
-            WidthRequest="400"
+            WidthRequest="300"
             Padding="0" 
             Spacing="25">
             <Image
                 Source="dotnet_bot.png"
-                HeightRequest="185"
+                HeightRequest="150"
                 Aspect="AspectFit"
-                SemanticProperties.Description="dot net bot in a race car number eight" />
-            
-            <Button
-                Text="Draw" 
-                Command="{Binding DrawCommand}"/>
-            <Button 
-                Text="Clear" 
-                Command="{Binding ClearCommand}"/>
-
+                SemanticProperties.Description="dot net bot in a race car number eight" />            
+            <Button Text="Draw" Command="{Binding DrawCommand}"/>
+            <Button  Text="Clear" Command="{Binding ClearCommand}"/>
             <Border
-                HeightRequest="400"
-                WidthRequest="400"
+                HeightRequest="300"
+                WidthRequest="300"
                 Stroke="#222222"
                 StrokeThickness="2">
                 <controls:MyGraphicsView 

@@ -64,4 +64,10 @@
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.1" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Compile Update="NewPage1.xaml.cs">
+	    <DependentUpon>NewPage1.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
 </Project>
