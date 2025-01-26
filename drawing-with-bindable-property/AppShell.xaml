@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="SleepDiary.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:SleepDiary"
+    Shell.FlyoutBehavior="Disabled"
+    Title="drawing_with_bindable_property">
+
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:NewPage1}"
+        Route="MainPage" />
+
+</Shell>
